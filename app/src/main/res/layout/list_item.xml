@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_01"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivImage"
+            android:paddingTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvTitle"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:clickable="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="?colorAccent"
+            android:layout_below="@id/tvTitle"
+            android:text="Chitra Padmanabhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
